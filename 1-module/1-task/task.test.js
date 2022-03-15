@@ -14,4 +14,8 @@ describe('1-module-1-task', () => {
     it('факториал 5 равен 120 ', () => {
       expect(factorial(5)).toEqual(120);
     });
+<<<<<<< HEAD
   });
+=======
+  });
+>>>>>>> cd8678b7d218096c595cb9e1cac3162bc99cb884
