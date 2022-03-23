@@ -4,10 +4,10 @@ let calculator = {
     calculator.b = b;
   },
   sum: function () {
-    return (calculator.a + calculator.b);
+    return (this.a + this.b);
   },
   mul: function () {
-    return (calculator.a * calculator.b);
+    return (this.a * this.b);
   }
 };
 
