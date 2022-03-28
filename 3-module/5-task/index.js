@@ -1,7 +1,7 @@
 function getMinMax(str) {
   let arr, numArr = [];
   arr = str.split(' ');
-  arr.forEach((element, index) => {
+  arr.forEach(element => {
     if(!isNaN(+element)){
       numArr.push(element);
     }; 
