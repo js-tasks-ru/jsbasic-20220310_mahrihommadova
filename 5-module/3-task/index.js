@@ -11,7 +11,6 @@ function initCarousel() {
       currentWidth -= slideElem.offsetWidth;
       slideElem.style.transform = `translateX(-${currentWidth}px)`;  
       counter -= 1;   
-      console.log(`counter = ${counter} and width = ${currentWidth} offsetWidth = ${slideElem.offsetWidth}`);
     }
     if(counter == 1) {
       lftBtn.style.display = 'none';
@@ -26,7 +25,6 @@ function initCarousel() {
       currentWidth += slideElem.offsetWidth;
       slideElem.style.transform = `translateX(-${currentWidth}px)`;  
       counter += 1;   
-      console.log(`counter = ${counter} and width = ${currentWidth} offsetWidth = ${slideElem.offsetWidth}`);
     }
     if(counter == 4) {
       rgtBtn.style.display = 'none';
