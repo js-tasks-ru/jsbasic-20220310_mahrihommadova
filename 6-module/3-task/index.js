@@ -16,12 +16,12 @@ export default class Carousel {
       this.prev();
     }
     if(e.target.closest('.carousel__button')){
-        const eventBtn = new CustomEvent("product-add", { 
-          detail: this.slides[this.currentSlide].id, 
-          bubbles: true 
-        });
+      const eventBtn = new CustomEvent("product-add", { 
+        detail: this.slides[this.currentSlide].id, 
+        bubbles: true 
+      });
 
-        e.target.closest('.carousel__button').dispatchEvent(eventBtn);
+      e.target.closest('.carousel__button').dispatchEvent(eventBtn);
     }
   }
 
