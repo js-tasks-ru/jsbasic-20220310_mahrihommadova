@@ -8,7 +8,7 @@ export default class Carousel {
     this.elem = this.render();
   }
 
-  initCarousel(e, parentDiv){    
+  initCarousel(e){    
     if(e.target.closest('.carousel__arrow_right')){
       this.next();
     }
@@ -96,7 +96,7 @@ export default class Carousel {
     parentDiv.append(innerDiv);
 
     parentDiv.addEventListener("click", (e) => {
-      this.initCarousel(e, parentDiv);
+      this.initCarousel(e);
     });
 
     parentDiv.addEventListener('product-add', () => {
